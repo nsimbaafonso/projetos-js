@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-ao">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arredondar um Número</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section>
+        <h1>Arredondar um Número</h1>
+        <div class="input">
+            <div class="inputGroup">
+                <input type="number" name="num" id="num" placeholder="Digite um número" min="0" max="150" step="0.1">
+            </div>
+        </div>
+
+        <div class="opcao">
+            <h2>Escolha:</h2>
+            <input type="radio" name="opcao" id="excesso">
+            <label for="excesso">Por Excesso</label> &nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="opcao" id="defeito">
+            <label for="defeito">Por Defeito</label>
+        </div>
+
+        <button id="arredonda" class="btn">Arredondar</button>
+
+        <p id="res" class="hide"></p>
+    </section>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

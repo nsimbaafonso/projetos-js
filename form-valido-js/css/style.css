@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    transition: .2s ease;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1.4rem 1rem;
+    width: 100%;
+    color: #fff;
+    background: linear-gradient(120deg, #14107c, #0a0a0a);
+    font-size: 1.8rem;
+    text-align: center;
+    border: 0;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+.btn:hover{
+    background: linear-gradient(120deg, #0a0a0a, #14107c);
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #14107c, #0a0a0a);
+}
+section{
+    padding: 1rem;
+    width: 80%;
+    max-width: 550px;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .7);
+    border-radius: .5rem;
+    background-color: #222121;
+    overflow-y: auto;
+}
+section > h1{
+    font-size: 3.5rem;
+    color: #fff;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.row .form{
+    flex: 1 1 40rem;
+    border: .1rem solid #a0714d;
+    padding: 2rem;
+}
+.row .form h3{
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #9b6a45;
+    padding-bottom: 1rem;
+}
+.row .form .inputBox{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: #c08b63;
+    border: .1rem solid rgba(255,255,255,.3);
+}
+.row .form .inputBox span{
+    color: #352e25;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+.row .form .inputBox input,
+.row .form .inputBox textarea{
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background: none;
+}
+.row .form .inputBox textarea{
+    height: 15rem;
+    resize: none;
+}
+.row .form .inputBox.error{
+    border: .1rem solid #f81010;
+}
+.error{
+    color: #f81010;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 992px) {
+    html{
+        font-size: 55%;
+    }
+}
+@media (max-width: 768px) {
+    
+}
+@media (max-width: 480px) {
+    html{
+        font-size: 50%;
+    }
+    section{
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+}

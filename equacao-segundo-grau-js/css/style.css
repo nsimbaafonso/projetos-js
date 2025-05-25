@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: .2s ease;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .4rem 1rem;
+    width: 100%;
+    color: #fff;
+    background: linear-gradient(120deg, #14107c, #0a0a0a);
+    font-size: 1.5rem;
+    text-align: center;
+    border: 0;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+.btn:hover{
+    background: linear-gradient(120deg, #0a0a0a, #14107c);
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #14107c, #0a0a0a);
+}
+section{
+    padding: 1rem;
+    width: 80%;
+    max-width: 550px;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .7);
+    border-radius: .5rem;
+    background-color: #222121;
+    overflow-y: auto;
+}
+section > h1{
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    margin: 1rem 0;
+}
+.input > .inputGroup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.input > .inputGroup > input {
+    background-color: #222121;
+    border: .2rem solid #14107c;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+    width: 60%;
+    color: #fff;
+    outline: none;
+}
+#res {
+    padding: 1.2rem;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #fff;
+    text-align: center;
+    border-radius: .5rem;
+    width: 100%;
+    background: #444343;
+}
+#res > p{
+    font-size: 1.2rem;
+    padding: .1rem 0;
+}
+.hide{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    section > h1{
+        font-size: 1.7rem;;
+    }
+    #res > p{
+        font-size: 1.1rem;
+    }
+    .input > .inputGroup > input {
+        width: 80%;
+    }
+    .input > .inputGroup > #res {
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 480px) {
+    section{
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+    section > h1{
+        font-size: 1.5rem;;
+    }
+    #res > p{
+        font-size: 1rem;
+    }
+}

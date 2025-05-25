@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-ao">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Válido</title>
+    <link href="fonts/fontawesome-6.4.2/css/fontawesome.css" rel="stylesheet">
+    <link href="fonts/fontawesome-6.4.2/css/brands.css" rel="stylesheet">
+    <link href="fonts/fontawesome-6.4.2/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section>
+        <h1>Formulário Válido</h1>
+        <div class="row">
+            <form action="" class="form" id="form">
+                <h3>Envie sua mensagem</h3>
+
+                <div class="inputBox">
+                    <span class="fas fa-user"></span>
+                    <input type="text" name="nome" id="nome" placeholder="Seu nome" autocomplete="name">
+                </div>
+                <p id="nomeError" class="error"></p>
+
+                <div class="inputBox">
+                    <span class="fas fa-envelope"></span>
+                    <input type="email" name="email" id="email" placeholder="exemplo@gmail.com" autocomplete="email">
+                </div>
+                <p id="emailError"  class="error"></p>
+
+                <div class="inputBox">
+                    <span class="fas fa-a"></span>
+                    <input type="text" name="assunto" id="assunto" placeholder="Seu assunto">
+                </div>
+                <p id="assuntoError"  class="error"></p>
+
+                <div class="inputBox">
+                    <span class="fas fa-comment"></span>
+                    <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Sua mensagem"></textarea>
+                </div>
+                <p id="msgError"  class="error"></p>
+
+                <button type="submit" class="btn">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

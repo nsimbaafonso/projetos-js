@@ -1,0 +1,212 @@
+@charset "UTF-8";
+
+:root{
+    --color-light: #f8fafc;
+    --color-dark-1: #797984;
+    --color-dark-2: #312d37;
+    --color-dark-3: #000;
+    --color-purple-1: #7c3aed;
+    --color-purple-2: #a855f7;
+    --color-purple-3: #df46df;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: .2s ease;
+    outline: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1.4rem 1rem;
+    width: 100%;
+    color: #fff;
+    background: linear-gradient(120deg, #14107c, #0a0a0a);
+    font-size: 1.8rem;
+    text-align: center;
+    border: 0;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: transform .3s ease-in;
+}
+.btn:hover{
+    background: linear-gradient(120deg, #0a0a0a, #14107c);
+    transform: scale(1.1);
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #14107c, #0a0a0a);
+}
+#container{
+    padding: 1rem;
+    width: 80%;
+    max-width: 550px;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .7);
+    border-radius: .5rem;
+    background-color: var(--color-light);
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    animation: dark-to-light .3s ease-in-out;
+}
+
+#form-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15rem;
+    margin: 1rem 0;
+}
+#form-header h1{
+    font-size: 2.6rem;
+    position: relative;
+}
+#form-header h1::before{
+    position: absolute;
+    content: '';
+    width: 40%;
+    background-color: var(--color-purple-1);
+    height: .4rem;
+    bottom: .1rem;
+    border-radius: .5rem;
+}
+#form-header #mode_icon{
+    font-size: 2.6rem;
+    cursor: pointer;
+}
+.social-media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 1rem 0;
+}
+.social-media a{
+    font-size: 2rem;
+    height: 5rem;
+    width: 5rem;
+    line-height: 3rem;
+    text-align: center;
+    color: #fff;
+    background-color: var(--color-dark-2);
+    padding: 1rem;
+    border-radius: 50%;
+    transition: transform .3s ease-in;
+}
+.social-media a:hover{
+    background-color: var(--color-dark-3);
+    transform: scale(1.2);
+}
+
+#form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3rem 4rem;
+    gap: 3rem;
+    height: fit-content;
+    animation: dark-to-light .3s ease-in-out;
+}
+#inputs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+.input-box label{
+    font-size: 1.7rem;
+    color: var(--color-dark-1);
+}
+.input-field{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: .3rem;
+    cursor: text;
+    border-bottom: .4rem solid var(--color-purple-1);
+}
+.input-field i{
+    font-size: 2rem;
+    color: var(--color-dark-3);
+}
+
+.input-field  input{
+    border: none;
+    background-color: transparent;
+    font-size: 1.7rem;
+    width: 100%;
+    padding: 0 .5rem;
+    margin: 1rem 0;
+}
+#forgot_password {
+    padding: 2rem 0;
+    text-align: center;
+}
+#forgot_password a{
+    font-size: 1.5rem;
+    color: var(--color-dark-1);
+}
+#forgot_password a:hover{
+    color: var(--color-purple-1);
+}
+#container.dark,#form.dark{
+    color: var(--color-light);
+    background-color: var(--color-dark-2);
+    animation: light-to-dark .3s ease-in-out;
+}
+.dark#form .input-field i,
+.dark#form .input-field  input{
+    color: var(--color-light);
+}
+
+@keyframes dark-to-light {
+    0%{
+        background-color: var(--color-dark-2);
+    }
+    100%{
+        background-color: var(--color-light);
+    }
+}
+@keyframes light-to-dark {
+    0%{
+        background-color: var(--color-light);
+    }
+    100%{
+        background-color: var(--color-dark-2);
+    }
+}
+
+@media (max-width: 992px) {
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 480px) {
+    html{
+        font-size: 50%;
+    }
+    #container{
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-ao">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validando Formulário</title>
+    <link href="fonts/fontawesome-6.4.2/css/fontawesome.css" rel="stylesheet">
+    <link href="fonts/fontawesome-6.4.2/css/brands.css" rel="stylesheet">
+    <link href="fonts/fontawesome-6.4.2/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section>
+        <h1>Validando Formulário</h1>
+        <div class="row">
+            <form action="" class="form" id="form">
+                <h3>Cadastra-se Em Um Toque</h3>
+
+                <div class="inputBox">
+                    <span class="fas fa-user"></span>
+                    <input type="text" name="nome" id="nome" placeholder="Seu nome" autocomplete="name">
+                </div>
+                <p id="nomeError" class="error"></p>
+
+                <div class="inputBox">
+                    <span class="fas fa-envelope"></span>
+                    <input type="email" name="email" id="email" placeholder="exemplo@gmail.com" autocomplete="email">
+                </div>
+                <p id="emailError"  class="error"></p>
+
+                <div class="inputBox">
+                    <span class="fas fa-key"></span>
+                    <input type="password" name="password" id="password" placeholder="Sua senha" autocomplete="new-password">
+                </div>
+                <p id="passError"  class="error"></p>
+
+                <div class="inputBox">
+                    <span class="fab fa-keycdn"></span>
+                    <input type="password" name="confirm-pass" id="confirm-pass" placeholder="Confirme sua senha" autocomplete="current-password">
+                </div>
+                <p id="confirmError"  class="error"></p>
+
+                <button type="submit" class="btn">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

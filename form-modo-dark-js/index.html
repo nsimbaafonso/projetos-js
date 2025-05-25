@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-ao">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Modo Dark</title>
+    <link href="fonts/fontawesome-6.4.2/css/fontawesome.css" rel="stylesheet">
+    <link href="fonts/fontawesome-6.4.2/css/brands.css" rel="stylesheet">
+    <link href="fonts/fontawesome-6.4.2/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section id="container">
+        <div id="form-header">
+            <h1>Login</h1>
+            <i id="mode_icon" class="fas fa-moon"></i>
+        </div>
+        <div class="social-media">
+            <a href="#" class="fab fa-facebook-f" title="Facebook"></a>
+            <a href="#" class="fab fa-google" title="Google"></a>
+            <a href="#" class="fab fa-github" title="Github"></a>
+        </div> 
+        <form action="" method="get" autocomplete="off" id="form">
+            <div id="inputs">
+                <div class="input-box">
+                    <label for="name">
+                        Nome
+                        <div class="input-field">
+                            <i class="fas fa-user"></i>
+                            <input type="text" name="name" id="name" placeholder="Seu nome" autocomplete="name" required>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="input-box">
+                    <label for="email">
+                        Email
+                        <div class="input-field">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" name="email" id="email" placeholder="exemplo@gmail.com" autocomplete="email" required>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="input-box">
+                    <label for="senha">
+                        Senha
+                        <div class="input-field">
+                            <i class="fas fa-key"></i>
+                            <input type="password" name="senha" id="senha" placeholder="Sua senha" required>
+                        </div>
+                    </label>
+
+                    <div id="forgot_password">
+                        <a href="#">Forgot your password</a>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="btn">Logar</button>
+        </form>
+    </section>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-ao">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronómetro</title>
+    <link href="fonts/fontawesome-6.4.2/css/fontawesome.css" rel="stylesheet">
+    <link href="fonts/fontawesome-6.4.2/css/brands.css" rel="stylesheet">
+    <link href="fonts/fontawesome-6.4.2/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section>
+        <h1>Cronómetro</h1>
+        <div class="stopwatch">
+            <h2 id="timer">00:00:00:00</h2>
+        </div>
+
+        <div class="actions">
+            <button id="reset" class="btn" title="Reiniciar"><i class="fas fa-rotate-right"></i></button>
+            <button id="power" class="btn" action="start" title="Iniciar | Pausar"><i class="fas fa-play"></i></button>
+            <button id="mark" class="btn" title="Marcar"><i class="fas fa-flag"></i></button>
+        </div>
+
+        <div id="marks-list" class="res hide"></div>
+    </section>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
